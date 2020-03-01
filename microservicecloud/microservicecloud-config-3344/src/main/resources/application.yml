@@ -1,0 +1,18 @@
+server:
+  port: 3344
+spring:
+  application:
+    name: springcloud-config
+  cloud:
+    config:
+      label: master
+      server:
+        git:
+          uri: https://github.com/shipaiYang/microservicecloud-config.git
+          username: 619318468@qq.com
+          password: XXXX
+
+
+
+
+

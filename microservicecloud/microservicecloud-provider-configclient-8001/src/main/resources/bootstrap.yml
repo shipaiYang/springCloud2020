@@ -1,0 +1,8 @@
+#microservicecloud-provider-configclient
+spring:
+  cloud:
+    config:
+      name: microservicecloud-provider-configclient
+      profile: test
+      label: master
+      uri: http://localhost:3344 #本微服务启动后先去找3344服务，通过springCloudConfig获取github的服务地址

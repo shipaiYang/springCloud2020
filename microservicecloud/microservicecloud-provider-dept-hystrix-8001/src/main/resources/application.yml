@@ -1,0 +1,35 @@
+server:
+  port: 8001
+mybatis:
+  config-location: classpath:mybatis/mybatis-cfg.xml
+  type-aliases-package: org.cloud.ysp.entity
+  mapper-locations: classpath:mybatis/mapper/**/*.xml
+spring:
+  application:
+    name: microservicecloud-dept
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: org.gjt.mm.mysql.Driver
+    url: jdbc:mysql://localhost:3306/cloudDB01
+    username: root
+    password: root
+    dbcp2:
+      min-idle: 5
+      max-total: 5
+      initial-size: 5
+      max-wait-millis: 200
+
+#eureka
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka7001:7001/eureka,http://eureka7002:7002/eureka,http://eureka7003:7003/eureka
+  instance:
+    instance-id: microservicecloud-dept8001-hystrix
+    prefer-ip-address: true #访问路径可以显示IP地址
+
+info:
+  app.name: ysp-microservicecloud
+  company.name: www.ysp.org
+  build.artifactId: $project.artifactId$
+  build.version: $project.version$

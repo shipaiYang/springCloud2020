@@ -1,0 +1,12 @@
+server:
+  port: 3344
+spring:
+  application:
+    name: springcloud-config
+  cloud:
+    config:
+      label: master
+      server:
+        git:
+          uri: D:\myData\gitRepository\mySpringCloud\microservicecloud-config
+

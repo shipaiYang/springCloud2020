@@ -1,0 +1,42 @@
+server:
+  port: 3344
+spring:
+  application:
+    name: springcloud-config
+  cloud:
+    config:
+      label: master
+      server:
+        git:
+          uri: git@github.com:shipaiYang/microservicecloud-config2.git
+          hostKeyAlgorithm: ssh-rsa
+          hostKey: someHostKey
+          ignoreLocalSshSettings: true
+          privateKey: |
+                          -----BEGIN OPENSSH PRIVATE KEY-----
+                          b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAABFwAAAAdzc2gtcn
+                          NhAAAAAwEAAQAAAQEArS4HGl1u6VCg8v8I2ICajjMLKVwNFNv5U4j7NARwOVIGZwJNlp/W
+                          L/9bn/tD027jsr7C/be2CiqXOehu+Ajp0tZGGcNp6BITqXsVzaqvpRuTh8i52DwNHq9wzE
+                          6CnJ1zbe2JyP1v5bEMAawnLaIZnIdKXETKO2ZevbzBw5Jmzy+/NoY9zvxr/9UQ2dBUbc/m
+                          JBwPhzO/JQrL6mO15M69fexd3UB6qWGiBl4FdqL1c/mMf5CtrBWT2I3ojXygd2tK1NLoit
+                          cGuZLyu0WYtKSa/6FGNL03/xm4J8I/7kqNbHpXmhnSlYTHhsGHDdF9QYgeCBjQyLUQdPRZ
+                          Vq6CBGkl3wAAA9DQMmpU0DJqVAAAAAdzc2gtcnNhAAABAQCtLgcaXW7pUKDy/wjYgJqOMw
+                          spXA0U2/lTiPs0BHA5UgZnAk2Wn9Yv/1uf+0PTbuOyvsL9t7YKKpc56G74COnS1kYZw2no
+                          EhOpexXNqq+lG5OHyLnYPA0er3DMToKcnXNt7YnI/W/lsQwBrCctohmch0pcRMo7Zl69vM
+                          HDkmbPL782hj3O/Gv/1RDZ0FRtz+YkHA+HM78lCsvqY7Xkzr197F3dQHqpYaIGXgV2ovVz
+                          +Yx/kK2sFZPYjeiNfKB3a0rU0uiK1wa5kvK7RZi0pJr/oUY0vTf/Gbgnwj/uSo1seleaGd
+                          KVhMeGwYcN0X1BiB4IGNDItRB09FlWroIEaSXfAAAAAwEAAQAAAQEAlpmQU70s1njnfmmK
+                          p7wuq7p32l/SgHFLQPm+el3hufc62hmGn5YgDV1jsJwxP40PNkHuD/XSuMSQ/irDVa9qp4
+                          7vJzhowQf3UUtYiqIEXPC+OzazZvfR8P1gektMCiZiWxZW3BKJXJW6eznaWDS/UP/WCqdH
+                          tqAvg5DCb/DAtyrAEx5Aq+kTZOmEMMjBjwuQ7syO3mQ13VFxLcmj+EIZu9H5t1WYly5y3T
+                          oYw4z9rtAqdZIebZRkvJH37U9NOJ+B87LSmxRpTVCLgxeh1wRi1BArlhYm7ul0fMJJuciv
+                          oLXe9bS2+IxWEweR+/5bt5YvHSVxRvxQYdeShNXuwqzLAQAAAIEAh6owdbe2v3PVlOZwQE
+                          KDMa04mn+aMCa4C5hBLUdDe1oewwda0PjocZo8TXdZip7wN+3s7byUBA2hF08suhehqEMb
+                          JrXz4ctdMrnbF//KKnQy4th7rlbrzkAovVnZxeF1EJZ717o0kz1XxlBl3pgMogpwvgKeKL
+                          JYbc3TavAZ9qgAAACBANm7icGNAb+a+J6g/fjANwg62JRnAsC98qiPq2OLTM/YM4YhADWz
+                          /oGPaHna10kgJ8HzvtAbBqGme0tclDun4iTqyUvZkwyFSD55DUEA+6v/6r4kltsZfQvevC
+                          Ly0f9GSa25LRMpfWx7YQWE+jDVCDuuRkQ3WF3qvW/6nm7hGly7AAAAgQDLnewnZ+H0DqGd
+                          qClhwIMEvwP1ZhtXg6pmVyZYqmfUpWHImdQbEq2utt1xK8v0gOQ4Vl0z9JXVzX8wYi2Omn
+                          BON/6o2QzDACRboH/CSmolp18jtG+u8wzGRjDGUzaJXRLpNzlNzugZNvDMQ1doWr07GFQj
+                          JqV35wjSzwQzOZt7LQAAABNwYWlAREVTS1RPUC1RTTZLQzE5AQIDBAUG
+                          -----END OPENSSH PRIVATE KEY-----

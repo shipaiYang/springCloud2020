@@ -1,0 +1,20 @@
+server:
+  port: 9528
+spring:
+  application:
+    name: microservicecloud-consumer-dept
+
+
+feign:
+  hystrix:
+    enabled: true
+
+eureka:
+  instance:
+    instance-id: microservicecloud-consumer-dept9528
+    prefer-ip-address: true #访问路径可以显示IP地址
+  client:
+    service-url:
+      defaultZone: http://eureka7001:7001/eureka,http://eureka7002:7002/eureka,http://eureka7003:7003/eureka
+
+
